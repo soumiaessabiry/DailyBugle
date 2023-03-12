@@ -7,7 +7,7 @@ import {
   Alert,
 } from "react-native";
 import React from "react";
-import Logo from "../assets/im2.png";
+import Logo from "../assets/im4.png";
 import Icon from "react-native-vector-icons/AntDesign";
 
 const Home = ({ navigation }) => {
@@ -24,7 +24,7 @@ const Home = ({ navigation }) => {
           <View>
             <Text
               style={{
-                fontSize: 35,
+                fontSize: 45,
                 color: "white",
                 marginLeft: 20,
                 marginBottom: 50,
@@ -36,7 +36,7 @@ const Home = ({ navigation }) => {
           </View>
           <TouchableOpacity onPress={() => navigation.replace("Homenews")}>
             <View >
-            <Icon name="rightcircleo" style={{ fontSize:70,color:"#c71585",   marginRight:30,marginBottom:20}}></Icon>
+            <Icon name="rightcircleo" style={{ fontSize:70,color:"#191970",   marginRight:30,marginBottom:20}}></Icon>
             </View>
           </TouchableOpacity>
           </View>
