@@ -2,10 +2,7 @@ import {TouchableOpacity,Text ,ScrollView,StyleSheet,View, ImageBackground} from
 import React from 'react'
 import Icon from "react-native-vector-icons/AntDesign";
 import Entypo from "react-native-vector-icons/Entypo";
-import { Card } from '@rneui/themed';
 import Logo from "../assets/im2.png";
-
-import { BackgroundImage } from '@rneui/themed/dist/config';
 
 const HomeNews = ({navigation}) => {
   return (    
@@ -65,106 +62,28 @@ const HomeNews = ({navigation}) => {
           <ScrollView>
             <View style={styles.viewAllNews}>
               {/* news */}
-             <View >
-              <ImageBackground imageStyle={{ borderRadius: 14,height:null,width:null}} source={Logo} style={{margin:10,height:180}}  >
-                <View style={styles.space_betwin}>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>Publisher</Text>
+              <View >
+                <ImageBackground imageStyle={{ borderRadius: 14,height:null,   width:null}} source={Logo} style={{margin:10,height:180}}  >
+                  <View style={styles.space_betwin}>
+                    <View style={styles.stylePublisher}>
+                      <Text style={styles.styletextPublisher}>Publisher</Text>
+                    </View>
+                    <View style={styles.stylePublisher}>
+                      <Text style={styles.styletextPublisher}>date</Text>
+                    </View>
                   </View>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>date</Text>
+                  <View style={styles.space_betwintitle}>
+                    <View style={[styles.styletitle,{width:200}]}>
+                      <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
+                    </View>
+                    <View style={[styles.styletitle,{width:100,marginTop:40,  backgroundColor:"#a9a9a9",justifyContent:'center',padding:1}]}>
+                      <TouchableOpacity style={[styles.styletexttitle,{color:'#191970',alignItems:'center'}]}onPress={() => navigation.replace("Detail")} >
+                        <Text style={{color:'#191970',fontWeight:'bold'}}>Learn more</Text>
+                      </TouchableOpacity>
+                    </View>
                   </View>
-                </View>
-                <View style={styles.space_betwintitle}>
-                  <View style={[styles.styletitle,{width:200}]}>
-                     <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
-                  </View>
-                  <View style={[styles.styletitle,{width:100,marginTop:40, backgroundColor:'#dda0dd'}]}>
-                     <Text style={[styles.styletexttitle,{color:'#191970'}]}>learn mor</Text>
-                  </View>
-                </View>
                 </ImageBackground>
-              </View>
-             <View >
-              <ImageBackground imageStyle={{ borderRadius: 14,height:null,width:null}} source={Logo} style={{margin:10,height:180}}  >
-                <View style={styles.space_betwin}>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>Publisher</Text>
-                  </View>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>date</Text>
-                  </View>
-                </View>
-                <View style={styles.space_betwintitle}>
-                  <View style={[styles.styletitle,{width:200}]}>
-                     <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
-                  </View>
-                  <View style={[styles.styletitle,{width:100,marginTop:40, backgroundColor:'#dda0dd'}]}>
-                     <Text style={[styles.styletexttitle,{color:'#191970'}]}>learn mor</Text>
-                  </View>
-                </View>
-                </ImageBackground>
-              </View>
-             <View >
-              <ImageBackground imageStyle={{ borderRadius: 14,height:null,width:null}} source={Logo} style={{margin:10,height:180}}  >
-                <View style={styles.space_betwin}>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>Publisher</Text>
-                  </View>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>date</Text>
-                  </View>
-                </View>
-                <View style={styles.space_betwintitle}>
-                  <View style={[styles.styletitle,{width:200}]}>
-                     <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
-                  </View>
-                  <View style={[styles.styletitle,{width:100,marginTop:40, backgroundColor:'#dda0dd'}]}>
-                     <Text style={[styles.styletexttitle,{color:'#191970'}]}>learn mor</Text>
-                  </View>
-                </View>
-                </ImageBackground>
-              </View>
-             <View >
-              <ImageBackground imageStyle={{ borderRadius: 14,height:null,width:null}} source={Logo} style={{margin:10,height:180}}  >
-                <View style={styles.space_betwin}>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>Publisher</Text>
-                  </View>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>date</Text>
-                  </View>
-                </View>
-                <View style={styles.space_betwintitle}>
-                  <View style={[styles.styletitle,{width:200}]}>
-                     <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
-                  </View>
-                  <View style={[styles.styletitle,{width:100,marginTop:40, backgroundColor:'#dda0dd'}]}>
-                     <Text style={[styles.styletexttitle,{color:'#191970'}]}>learn mor</Text>
-                  </View>
-                </View>
-                </ImageBackground>
-              </View>
-             <View >
-              <ImageBackground imageStyle={{ borderRadius: 14,height:null,width:null}} source={Logo} style={{margin:10,height:180}}  >
-                <View style={styles.space_betwin}>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>Publisher</Text>
-                  </View>
-                  <View style={styles.stylePublisher}>
-                    <Text style={styles.styletextPublisher}>date</Text>
-                  </View>
-                </View>
-                <View style={styles.space_betwintitle}>
-                  <View style={[styles.styletitle,{width:200}]}>
-                     <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
-                  </View>
-                  <View style={[styles.styletitle,{width:100,marginTop:40, backgroundColor:'#dda0dd'}]}>
-                     <Text style={[styles.styletexttitle,{color:'#191970'}]}>learn mor</Text>
-                  </View>
-                </View>
-                </ImageBackground>
-              </View>
+              </View>      
             </View>
           </ScrollView>
       </View>
@@ -199,7 +118,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     justifyContent:'center',
     alignItems:'center',
-    backgroundColor:'#add8e6',
+    backgroundColor:'#d3d3d3',
     borderStartWidth: 4,
     borderBottomWidth:4,
     borderColor:'#191970'
