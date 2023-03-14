@@ -9,11 +9,11 @@ const Stack = createNativeStackNavigator();
 
 const route = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Sauvegarde">
       <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
       <Stack.Screen name='Homenews' component={Homenews} options={{ headerShown: false }} />
       <Stack.Screen name='Detail' component={Detail} options={{ headerShown: false }} />
-      <Stack.Screen name='Sauvegarde' component={Sauvegarde} />
+      <Stack.Screen name='Sauvegarde' component={Sauvegarde} options={{ headerShown: false }} />
       <Stack.Screen name='Navbar' component={Navbar}  options={{ headerShown: false }}/>
      
     </Stack.Navigator>

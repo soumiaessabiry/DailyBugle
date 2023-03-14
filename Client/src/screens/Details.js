@@ -1,4 +1,4 @@
-import { View, Text ,SafeAreaView,ScrollView,StyleSheet, ImageBackground} from 'react-native'
+import { View, Text ,ScrollView,StyleSheet, ImageBackground,TouchableOpacity} from 'react-native'
 import React from 'react'
 import Logo from "../assets/im2.png";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
@@ -18,9 +18,11 @@ const Details = ({navigation}) => {
         <View style={{flex:1.7}} >
           <ImageBackground source={Logo} style={{height:'100%',width:'100%'}} >
             <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-            <AntDesign name='leftcircleo' style={{fontSize:20,color:'white',margin:20}}>
+            <TouchableOpacity onPress={() => navigation.replace("Home")}>
+            <AntDesign name="leftcircleo" style={{ fontSize:35,color:"white",margin:20}}> 
             </AntDesign>
-            <MaterialIcons name='favorite-border' style={{fontSize:20,color:'white',margin:20}}>
+          </TouchableOpacity>
+            <MaterialIcons name='favorite-border' style={{fontSize:35,color:'white',margin:20}}>
             </MaterialIcons>
             </View>
           </ImageBackground>
