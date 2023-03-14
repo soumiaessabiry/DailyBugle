@@ -3,6 +3,8 @@ import React from 'react'
 import Icon from "react-native-vector-icons/AntDesign";
 import Entypo from "react-native-vector-icons/Entypo";
 import Logo from "../assets/im2.png";
+import Navbar from '../components/navBar';
+
 
 const HomeNews = ({navigation}) => {
   return (    
@@ -76,10 +78,11 @@ const HomeNews = ({navigation}) => {
                     <View style={[styles.styletitle,{width:200}]}>
                       <Text style={styles.styletexttitle}>Title AZERTYUIOAZERTYUIOPAZERTYUIOPAZERTYUIOZERTYUIOP</Text>
                     </View>
-                    <View style={[styles.styletitle,{width:100,marginTop:40,  backgroundColor:"#a9a9a9",justifyContent:'center',padding:1}]}>
+                    <View style={[styles.styletitle,{width:100,marginTop:40,  backgroundColor:"#d3d3d3",justifyContent:'center',padding:1}]}>
                       <TouchableOpacity style={[styles.styletexttitle,{color:'#191970',alignItems:'center'}]}onPress={() => navigation.replace("Detail")} >
                         <Text style={{color:'#191970',fontWeight:'bold'}}>Learn more</Text>
                       </TouchableOpacity>
+                      
                     </View>
                   </View>
                 </ImageBackground>
@@ -87,6 +90,9 @@ const HomeNews = ({navigation}) => {
             </View>
           </ScrollView>
       </View>
+      </View>
+      <View style={{flex:0.3}}>
+          <Navbar onPress={() => navigation.replace("Home")}/>
       </View>
     </View>
  
@@ -118,7 +124,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     justifyContent:'center',
     alignItems:'center',
-    backgroundColor:'#d3d3d3',
+    backgroundColor:'#ffb6c1',
     borderStartWidth: 4,
     borderBottomWidth:4,
     borderColor:'#191970'

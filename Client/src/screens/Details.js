@@ -3,8 +3,10 @@ import React from 'react'
 import Logo from "../assets/im2.png";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import Navbar from '../components/navBar';
 
-const Details = () => {
+const Details = ({navigation}) => {
     return (
       <View
         style={[
@@ -13,9 +15,14 @@ const Details = () => {
             flexDirection: 'column',
           },
         ]}>
-        <View style={{flex:2}} >
+        <View style={{flex:1.7}} >
           <ImageBackground source={Logo} style={{height:'100%',width:'100%'}} >
-            <AntDesign name='leftcircleo' style={{fontSize:20,color:'white',margin:20}}></AntDesign>
+            <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+            <AntDesign name='leftcircleo' style={{fontSize:20,color:'white',margin:20}}>
+            </AntDesign>
+            <MaterialIcons name='favorite-border' style={{fontSize:20,color:'white',margin:20}}>
+            </MaterialIcons>
+            </View>
           </ImageBackground>
         </View>
         <View style={{flex:1.5}} >
@@ -46,6 +53,9 @@ const Details = () => {
             </View>
           </ScrollView>
         </View>
+        <View style={{flex:0.5}}>
+          <Navbar onPress={() => navigation.replace("Home")}/>
+      </View>
        
       </View>
     );
