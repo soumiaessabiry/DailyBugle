@@ -3,7 +3,7 @@ import React from 'react'
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Fontisto from "react-native-vector-icons/Fontisto";
 
-const Navbar = ({onPress}) => {
+const Navbar = ({Home,favorite}) => {
     return (
         <View
           style={[
@@ -14,12 +14,15 @@ const Navbar = ({onPress}) => {
           ]}>
           <View style={{flex:1, backgroundColor: '#f0f8ff'}} >
             <View style={{flexDirection:'row',justifyContent:'space-around',paddingVertical:10}}>
-            <TouchableOpacity onPress={onPress}>
+            <TouchableOpacity onPress={Home}>
                 <Fontisto name="home" style={{ fontSize:30 ,color:"black"}}> 
                 </Fontisto>
             </TouchableOpacity>
+            <TouchableOpacity onPress={favorite}>
             <MaterialIcons name='favorite' style={{fontSize:30,color:'black'}}>
             </MaterialIcons>
+            </TouchableOpacity>
+    
             </View>
           </View>
         </View>

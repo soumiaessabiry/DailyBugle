@@ -56,8 +56,9 @@ const Details = ({navigation}) => {
           </ScrollView>
         </View>
         <View style={{flex:0.5}}>
-          <Navbar onPress={() => navigation.replace("Home")}/>
-      </View>
+        <Navbar Home={() => navigation.replace("Home")}  
+        favorite={() => navigation.replace("Sauvegarde")}/>
+          </View>
        
       </View>
     );

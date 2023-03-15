@@ -69,7 +69,7 @@ const Sauvegarde = ({navigation}) => {
       </View>
       </View>
       <View style={{flex:0.3}}>
-          <Navbar onPress={() => navigation.replace("Home")}/>
+      <Navbar Home={() => navigation.replace("Home")}  favorite={() => navigation.replace("Sauvegarde")}/>
       </View>
     </View>
  

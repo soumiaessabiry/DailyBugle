@@ -24,7 +24,7 @@ const Home = ({ navigation }) => {
           <View>
             <Text
               style={{
-                fontSize: 45,
+                fontSize: 35,
                 color: "white",
                 marginLeft: 20,
                 marginBottom: 50,
@@ -36,7 +36,7 @@ const Home = ({ navigation }) => {
           </View>
           <TouchableOpacity onPress={() => navigation.replace("Homenews")}>
             <View >
-            <Icon name="rightcircleo" style={{ fontSize:70,color:"#191970",   marginRight:30,marginBottom:20}}></Icon>
+            <Icon name="rightcircleo" style={{ fontSize:60,color:"#191970",   marginRight:30,marginBottom:20}}></Icon>
             </View>
           </TouchableOpacity>
           </View>
